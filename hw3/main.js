@@ -5,9 +5,9 @@ const getMaxDigit = (number) => {
  
 
 //2
-let determiningTheDegreeOfNumber = ( number, stepen ) => {
+let determiningTheDegreeOfNumber = ( number, power ) => {
     let result = number;
-    for ( let i=1; i< stepen; i++ )
+    for ( let i = 1; i < power; i++ )
         result *= number ;
     return result;
 }
@@ -35,16 +35,16 @@ let getRandomArbitrary = (min, max) => {
 
 
 //8
-let pass = (lenth=8) => {
-  return Math.random().toString().slice(-lenth);;
+let generatePassword = (length=8) => {
+  return Math.random().toString().slice(-length);;
 }
 
 
 
 //
-console.log( getMaxDigit(423) );
-console.log ( determiningTheDegreeOfNumber (2,5) );
-console.log( nameChange('mIsha') ) ;
-console.log ( interestCalculation(8000) );
-console.log( getRandomArbitrary(9,100) );
-console.log( pass(5) );
+console.log( "Фукнция №1 ", getMaxDigit(423) );
+console.log ( "Фукнция №2 ", determiningTheDegreeOfNumber (2,5) );
+console.log( "Фукнция №3 ", nameChange('mIsha') ) ;
+console.log ( "Фукнция №4 ", interestCalculation(8000) );
+console.log( "Фукнция №5 ", getRandomArbitrary(9,100) );
+console.log( "Фукнция №6 ", generatePassword(5) );
