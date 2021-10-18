@@ -37,7 +37,7 @@ console.log( getSubjects(students[0]) );
 //2
 
 function getAverageMark (student) {
-    const arrsOfMarks = Object.values( students[0].subjects );
+    const arrsOfMarks = Object.values( student.subjects );
     const arrAllMarks = arrsOfMarks[0].concat( arrsOfMarks[1],arrsOfMarks[2] );
     const averageMark = ( arrAllMarks.reduce( (sum, mark) => sum + mark ) / arrAllMarks.length ).toFixed(2);
     return averageMark;
