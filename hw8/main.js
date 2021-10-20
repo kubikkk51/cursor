@@ -55,8 +55,7 @@ console.log( ostap.marks );
 class BudgetStudent extends Student {
     constructor ( university, course, fullName ) {
         super ( university, course, fullName );
-        const result = setInterval( () => this.getScholarship(), 30000 );
-        setTimeout( () => { clearInterval(result) }, 90000 );
+        setInterval( () => this.getScholarship(), 30000 );
     } 
     getScholarship () {
        if ( this.statusOfStudent && this.getAverageMark() >= 4 ) {
